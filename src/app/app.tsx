@@ -1,8 +1,12 @@
 import { Component } from "react";
+import { MainRoute } from "../modules";
 
+/**
+ * Top-level app component.
+ */
 class App extends Component {
     render() {
-        return <h1>Hello World.</h1>
+        return <MainRoute />;
     }
 }
 
