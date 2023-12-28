@@ -6,7 +6,7 @@ Things to learn:
 
 Things I learned while making this project:
 
-1. Client-side routing using react-router-dom and <Routes>.
+1. Client-side routing using react-router-dom and &lt;Routes&gt;.
 2. React reducers.
 3. React state contexts.
 4. Using Contexts with Reducers for managing state of multiple components from a central point.
