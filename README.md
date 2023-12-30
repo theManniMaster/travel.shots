@@ -1,8 +1,9 @@
 A project to understand the working of Vite + React and to showcase some of my travel collections.
 
-Things to learn:
+Things yet to learn:
 
-1. how to configure react's import statement to use "src" folder as the base url. Has something to do with the [Module Resolutions](https://www.typescriptlang.org/docs/handbook/modules/theory.html#module-resolution).
+1. Implement lazy loading of components in &lt;Routes&gt;.
+2. how to configure react's import statement to use "src" folder as the base url. Has something to do with the [Module Resolutions](https://www.typescriptlang.org/docs/handbook/modules/theory.html#module-resolution).
 
 Things I learned while making this project:
 

@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { Routes } from "react-router";
 import { Route } from "react-router-dom";
+import { Register } from "../register";
 
 /**
  * Default URL route for all paths.
@@ -22,6 +23,7 @@ class MainRoute extends Component{
                  * 
                  */}
                 <Route path="/login" element={<h1>admin</h1>} />
+                <Route path="/register" Component={Register} />
                 <Route path="/home">
                     <Route index element={<h1>Home</h1>} />
                     <Route path="images" element={<h1>Images</h1>} />
