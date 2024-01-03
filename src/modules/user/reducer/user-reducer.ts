@@ -1,5 +1,5 @@
 import { ActionMap } from "../../helpers";
-import { UserModel } from "../data";
+import { UserModel, UserState } from "../data";
 
 /**
  * User actions to modify state.
@@ -40,11 +40,23 @@ type UserActionList = ActionMap<UserPayload>[keyof ActionMap<UserPayload>];
 
 /**
  * Reducer function to update user's state.
- * @param user User model.
+ * @param state User state.
  * @param action User action list.
  * @returns Modified user state.
  */
-function userReducer(user: UserModel, action: UserActionList) {
+function userReducer(state: UserState, action: UserActionList): UserState {
+    return {
+        user: reducer(state.user, action)
+    };
+}
+
+/**
+ * Private helper function for userReducer.
+ * @param user User model.
+ * @param action User action list.
+ * @returns Modified user.
+ */
+function reducer(user: UserModel, action: UserActionList): UserModel {
     switch (action.type) {
         case UserActions.SET_FIRST_NAME: {
             const { firstName } = action.payload;
