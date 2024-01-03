@@ -12,4 +12,4 @@ i18next
         resources: {},
     });
 
-export default i18next;
+export { i18next };

@@ -11,3 +11,4 @@ Things I learned while making this project:
 2. React reducers.
 3. React state contexts.
 4. Using Contexts with Reducers for managing state of multiple components from a central point.
+5. Using i18next for translations and adding resource bundles as needed (using imports in index.ts).
