@@ -1,12 +1,12 @@
 import { createContext, useReducer, Dispatch, Context, ReactNode, FC } from "react";
-import { UserModel, createInitialState } from "../data";
+import { UserState, createInitialState } from "../data";
 import { UserActionList, userReducer } from "../reducer";
 
 /**
  * User context type.
  */
 type UserContextType = {
-    user: UserModel;
+    state: UserState;
     dispatch: Dispatch<UserActionList>;
 };
 
@@ -21,7 +21,7 @@ type UserProviderProps = {
  * User context.
  */
 const UserContext: Context<UserContextType> = createContext<UserContextType>({
-    user: createInitialState(),
+    state: createInitialState(),
     dispatch: () => null
 });
 
@@ -32,10 +32,10 @@ const UserContext: Context<UserContextType> = createContext<UserContextType>({
  */
 const UserProvider: FC<UserProviderProps> = (props: UserProviderProps) => {
     const { children } = props;
-    const [user, dispatch] = useReducer(userReducer, createInitialState());
+    const [state, dispatch] = useReducer(userReducer, createInitialState());
 
     return (
-        <UserContext.Provider value={{user, dispatch}}>
+        <UserContext.Provider value={{state, dispatch}}>
             { children }
         </UserContext.Provider>
     );
