@@ -16,7 +16,8 @@ interface Props extends WithUser, WithTranslation {
 class Register extends Component<Props> {
     render(): ReactNode {
         const { t, userContext } = this.props;
-        const { user, dispatch } = userContext;
+        const { state, dispatch } = userContext;
+        const { user } = state;
 
         return (
             <>
