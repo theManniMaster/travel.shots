@@ -36,7 +36,7 @@ class UserModel {
         this.email = "";
         this.password = null;
         this.isLoggedIn = false;
-    };
+    }
 
     /**
      * Updates user's first name.
@@ -47,7 +47,7 @@ class UserModel {
         this.firstName = firstName;
 
         return this;
-    };
+    }
 
     /**
      * Updates user's last name.
@@ -58,7 +58,7 @@ class UserModel {
         this.lastName = lastName;
 
         return this;
-    };
+    }
 
     /**
      * Updates user's email id.
@@ -69,7 +69,7 @@ class UserModel {
         this.email = email;
 
         return this;
-    };
+    }
 
     /**
      * Updates user's password. Only used for creating an account.
@@ -80,7 +80,7 @@ class UserModel {
         this.password = password;
 
         return this;
-    };
+    }
 
     /**
      * Updates user's logged in state.
@@ -91,7 +91,7 @@ class UserModel {
         this.isLoggedIn = isLoggedIn;
 
         return this;
-    };
-};
+    }
+}
 
 export default UserModel;

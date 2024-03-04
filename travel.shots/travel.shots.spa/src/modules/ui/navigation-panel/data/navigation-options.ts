@@ -6,6 +6,6 @@ enum NavigationOptions {
     Images = "images",
     Token = "token",
     About = "about",
-};
+}
 
 export { NavigationOptions };

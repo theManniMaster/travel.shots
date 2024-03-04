@@ -7,7 +7,7 @@ import { Header, NavigationPanel } from "../ui";
  */
 interface Props extends WithTranslation {
 
-};
+}
 
 /**
  * Landing page component.
@@ -25,7 +25,8 @@ class LandingPage extends Component<Props> {
                 <NavigationPanel />
             </>
         );
-    };
-};
+    }
+}
 
-export default withTranslation("landingPage")(LandingPage);
+const LandingPageComponent = withTranslation("landingPage")(LandingPage);
+export default LandingPageComponent;

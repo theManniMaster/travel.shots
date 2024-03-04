@@ -1,21 +1,7 @@
-import { createContext, useReducer, Dispatch, Context, ReactNode, FC } from "react";
-import { UserState, createInitialState } from "../data";
-import { UserActionList, userReducer } from "../reducer";
-
-/**
- * User context type.
- */
-type UserContextType = {
-    state: UserState;
-    dispatch: Dispatch<UserActionList>;
-};
-
-/**
- * User provider props data.
- */
-type UserProviderProps = {
-    children: ReactNode;
-};
+import { createContext, useReducer, Context, FC } from "react";
+import { createInitialState } from "../data";
+import { userReducer } from "../reducer";
+import { UserContextType, UserProviderProps } from "./data";
 
 /**
  * User context.
@@ -43,4 +29,3 @@ const UserProvider: FC<UserProviderProps> = (props: UserProviderProps) => {
 
 export default UserProvider;
 export { UserContext };
-export type { UserContextType };

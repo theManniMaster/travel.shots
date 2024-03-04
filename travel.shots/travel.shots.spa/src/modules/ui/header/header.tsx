@@ -9,7 +9,7 @@ const { Title } = Typography;
 interface Props {
     text: string;
     subText?: string;
-};
+}
 
 /**
  * Header ui component.
@@ -31,7 +31,7 @@ class Header extends Component<Props> {
                 }
             </>
         );
-    };
-};
+    }
+}
 
 export default Header;

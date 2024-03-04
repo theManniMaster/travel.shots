@@ -2,21 +2,21 @@ import { Component, ReactNode } from "react";
 import { NavigationItems } from "./data";
 import { NavigationItemLabel } from "./components";
 import { NavigationItem } from "./types";
-import { Col, Row } from "antd";
+import { Row } from "antd";
 
 /**
  * Navigation panel props.
  */
 interface Props {
 
-};
+}
 
 /**
  * Navigation panel state.
  */
 interface State {
     selectedOptionDescription: string;
-};
+}
 
 /**
  * Navigation Panel ui component.
@@ -31,7 +31,7 @@ class NavigationPanel extends Component<Props, State> {
         this.state = {
             selectedOptionDescription: ""
         };
-    };
+    }
 
     /**
      * Handle item hover event.
@@ -69,7 +69,7 @@ class NavigationPanel extends Component<Props, State> {
                 </Row>
             </>
         );
-    };
-};
+    }
+}
 
 export default NavigationPanel;

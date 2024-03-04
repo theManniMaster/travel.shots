@@ -1,12 +1,6 @@
 import { ComponentType, useContext } from "react";
-import { UserContext, UserContextType } from "./context-provider";
-
-/**
- * Interface including user-context type.
- */
-interface WithUser {
-    userContext: UserContextType;
-};
+import { UserContext } from "./context-provider";
+import { UserContextType } from "./data";
 
 /**
  * Higher order component to provide user context.
@@ -27,4 +21,3 @@ const withUser = <T extends object>(WrappedComponent: ComponentType<T>) => {
 };
 
 export default withUser;
-export type { WithUser };

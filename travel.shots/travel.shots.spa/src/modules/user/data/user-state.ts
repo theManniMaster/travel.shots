@@ -13,7 +13,7 @@ type UserState = {
  */
 function createInitialState(): UserState {
     return { user: new UserModel() };
-};
+}
 
 export type { UserState };
 export default createInitialState;

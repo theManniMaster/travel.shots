@@ -33,7 +33,7 @@ class MainRoute extends Component {
                 <Route path="*" element={<Navigate to={"/home"}/>} />
             </Routes>
         );
-    };
-};
+    }
+}
 
 export default MainRoute;

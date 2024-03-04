@@ -10,7 +10,7 @@ enum UserActions {
     SET_EMAIL = "SET_EMAIL",
     SET_PASSWORD = "SET_PASSWORD",
     SET_IS_LOGGED_IN = "SET_IS_LOGGED_IN",
-};
+}
 
 /**
  * User actions to parameters mapping.
@@ -48,7 +48,7 @@ function userReducer(state: UserState, action: UserActionList): UserState {
     return {
         user: reducer(state.user, action)
     };
-};
+}
 
 /**
  * Private helper function for userReducer.
@@ -82,7 +82,7 @@ function reducer(user: UserModel, action: UserActionList): UserModel {
             return user;
         }
     }
-};
+}
 
 export { UserActions, userReducer };
 export type { UserActionList };

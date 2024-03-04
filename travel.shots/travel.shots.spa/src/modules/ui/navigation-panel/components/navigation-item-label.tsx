@@ -9,7 +9,7 @@ interface Props {
     item: NavigationItem
     onHover: (description: string) => void;
     onHoverOut: () => void;
-};
+}
 
 /**
  * Icon ui component.
@@ -43,6 +43,6 @@ class NavigationItemLabel extends Component<Props> {
             </Link>
         );
     }
-};
+}
 
 export default NavigationItemLabel;
