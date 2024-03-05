@@ -2,5 +2,5 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/travel.shots/.vs/travel.shots
+/travel.shots.spa/obj/Debug
 /.vs
